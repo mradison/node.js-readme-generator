@@ -1,6 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// function renderLicenseBadge(license) {
+//   if(license === MIT){
+//     ruturn [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT); 
+//   } else if(license === GPL ) {
+//     return [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0);
+//   }
+// }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -26,30 +32,26 @@ function generateMarkdown(data) {
   return `# ${data.name}
 
   ## Table of Contents
-     - [Description] (#description)
-     - [Installation] (#innstallation)
-     - [Instructions] (#instructions)
-     - [Contributors] (#contributors)
-     - [License] (#license)
-     - [Comments] (#comments)
+     - [Description](#description)
+     - [Installation](#innstallation)
+     - [Instructions](#instructions)
+     - [Contributors](#contributors)
+     - [License](#license)
+     - [Comments](#comments)
      
-  ## Description
+  ##<a name="description"></a> Description 
   ${data.description}
 
-  ## Installation
+  ## Installation 
   ${data.installation}
 
-  ## Instructions
+  ## Instructions 
   ${data.instructions}
 
-  ## Contributors
+  ## Contributors 
   ${data.contributors}
 
-  ${renderLicenseSection()}
-  ${renderLicenseLink()}
-  ${renderLicenseBadge()}
-
-  ## Comments
+  ##<a name="description"></a> Comments
   ${data.comments}
 `;
 

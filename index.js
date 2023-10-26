@@ -41,7 +41,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'What license did you use?',
-            choices: ['The MIT License', 'The GPL License', 'Apache License', 'GNU License', 'N/A'],
+            choices: ['MIT', 'GPL', 'Apache License', 'GNU', 'N/A'],
             validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
         },
         {
