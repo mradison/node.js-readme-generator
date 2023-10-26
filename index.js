@@ -27,14 +27,8 @@ inquirer
         },
         {
             type: 'input',
-            name: 'instructions',
+            name: 'usage',
             message: 'How would a user use your website?',
-            validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
-        },
-        {
-            type: 'input',
-            name: 'contributors',
-            message: 'Who else contributed to this project/website?',
             validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
         },
         {
@@ -46,8 +40,32 @@ inquirer
         },
         {
             type: 'input',
-            name: 'comments',
+            name: 'contributors',
+            message: 'Who else contributed to this project/website?',
+            validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Are there any test instructions?',
+            validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
+        },
+        {
+            type: 'input',
+            name: 'questions',
             message: 'Are there any additonal comments that you would like to add?',
+            validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your github username?',
+            validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
+        },
+        {
+            type: 'input',
+            name: 'emailaddress',
+            message: 'What is your email address?',
             validate: (value)=>{ if(value){return true} else {return 'Please input a value to continue'}},
         },
     ])
