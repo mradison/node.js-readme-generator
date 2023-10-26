@@ -30,6 +30,13 @@ THEN I am taken to the corresponding section of the README
 
 ## Mock Up
 
+https://github.com/mradison/node.js-readme-generator
+
+https://drive.google.com/file/d/1z5ULrH1sq20egsBlTuVNVBnxbQx633ST/view
+
+
+
+
 
 ## Notes
 
@@ -38,4 +45,6 @@ Here are some websites I used to help me with my assignment: (I also got help fr
 https://www.youtube.com/watch?v=2VUQABoFOqw
 
 
-I also went back to previous assignments and activities to get tips on how to code this assignment 
+I also went back to previous assignments and activities to get tips on how to code this assignment. 
+
+I also go help from classmates that were working on the same project. 
