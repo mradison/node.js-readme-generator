@@ -9,10 +9,10 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === 'N/A'){
-    return `  
-    - no license used
-    `
+  if (license){
+    return license
+  } else if (license === 'N/A'){
+    return ''
   }
 }
 
@@ -21,6 +21,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'N/A'){
     return `## License`
+  }  else {
+    return ''
   }
 }
 
@@ -47,9 +49,8 @@ function generateMarkdown(data) {
   ## Usage 
   ${data.usage}
 
-  ## License
-  ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contributors 
   ${data.contributors}
