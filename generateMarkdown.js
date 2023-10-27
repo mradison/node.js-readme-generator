@@ -5,10 +5,10 @@ function renderLicenseBadge(license) {
 }
 
 function renderLicenseLink(license) {
-  if (license) {
-    return license
-  } else if (license === 'N/A') {
+  if (license === 'N/A') {
     return ''
+  } else {
+    return license
   }
 }
 
